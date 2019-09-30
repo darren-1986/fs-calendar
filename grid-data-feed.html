@@ -1,0 +1,627 @@
+<html>
+    <head>
+     <title>FS Data Feed</title>
+    <link rel="stylesheet" href="grid-data-feed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script type="text/javascript">
+			function selectAll(){
+				var items=document.getElementsByName('acs');
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=true;
+				}
+			}
+			
+			function UnSelectAll(){
+				var items=document.getElementsByName('acs');
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=false;
+				}
+			}			
+		</script>
+        
+        
+
+    
+    </head>
+<body>
+
+    <div class="container-header">
+        <!-- MENU BAR -->
+            <div class="topbar">
+              <div class="topbar--brand">
+                <div class="topbar--brand__FSlogo"><img src="https://i.ibb.co/z6Ggvf4/fs-horizontal.png" alt="fs-horizontal" border="0" /></div>
+                <div class="topbar--brand__hamburgermenu"><i class="fas fa-bars"></i></div>
+              </div>
+              <div class="nav-bar header">
+
+                <div class="u-active-menu-item" id="home_btn"><a href="#" data-target="dashboard" class="nav-link">Dashboard</a></div>
+                <div><a href="#">Settings</a></div>
+<!--                <div><a href="#">Subscription</a></div>-->
+                <div class="switch-button">
+                  <div>Audio squawk
+                  </div>
+                  <div>
+                    <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                  </div>
+                </div>
+<!--                <div><input type="search" placeholder="search..."><i class="fas fa-search"></i></div>-->
+                <div><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
+              </div>
+              <div class="nav-bar2">
+                <div class="infobar--fullscreenbtns__btn btn-sentiment_stream"><a href="#" type="button" data-target="sentiment_stream" class="nav-link">Sentiment stream </a><span class="infobar--fullscreenbtns__icon"><i class="fas fa-expand-arrows-alt"></i></span></div>
+                <div class="infobar--fullscreenbtns__btn btn-education_centre"><a href="#" type="button" data-target="education_centre" class="nav-link">Education centre</a><span class="infobar--fullscreenbtns__icon"><i class="fas fa-expand-arrows-alt"></i></span></div>
+                <div class="infobar--fullscreenbtns__btn btn-economic-calendar"><a href="#" type="button">Economic Calendar</a><span class="infobar--fullscreenbtns__icon"><i class="fas fa-expand-arrows-alt"></i></span></div>
+                <div class="infobar--fullscreenbtns__btn btn-research_resources"><a href="#" data-target="research_resources" class="nav-link">Research resources</a><span class="infobar--fullscreenbtns__icon"><i class="fas fa-expand-arrows-alt"></i></span></div>
+              </div>
+            </div>
+              
+
+        </div>
+    
+<!-- Side calendar and main calendar-->
+<div class="main-container">
+    
+    
+    <!-- Side calendar-->
+    <div class="container-side-calendar">
+    <div class="side-calendar">
+        <div><h2>Navigation</h2></div>
+            <div>
+<div class="calendar">
+  <header>
+    <h1>October 2019</h1>
+  </header>
+
+  <ul class="weekdays">
+    <li class="li-calendar">
+      <abbr title="S">Sun</abbr>
+    </li>
+    <li class="li-calendar">
+      <abbr title="M">Mon</abbr>
+    </li>
+    <li class="li-calendar">
+      <abbr title="T">Tue</abbr>
+    </li>
+    <li class="li-calendar">
+      <abbr title="W">Wed</abbr>
+    </li>
+    <li class="li-calendar">
+      <abbr title="T">Thu</abbr>
+    </li>
+    <li class="li-calendar">
+      <abbr title="F">Fri</abbr>
+    </li>
+    <li class="li-calendar">
+      <abbr title="S">Sat</abbr>
+    </li>
+  </ul>
+
+  <ul class="day-grid">
+    <li class="month=prev">29</li>
+    <li class="month=prev">30</li>
+    <li class="li-calendar">1</li>
+    <li class="li-calendar">2</li>
+    <li class="li-calendar">3</li>
+    <li class="li-calendar">4</li>
+    <li class="li-calendar">5</li>
+    <li class="li-calendar">6</li>
+    <li class="li-calendar">7</li>
+    <li class="li-calendar">8</li>
+    <li class="li-calendar">9</li>
+    <li class="li-calendar">10</li>
+    <li class="li-calendar">11</li>
+    <li class="li-calendar">12</li>
+    <li class="li-calendar">13</li>
+    <li class="li-calendar">14</li>
+    <li class="li-calendar">15</li>
+    <li class="li-calendar">16</li>
+    <li class="li-calendar">17</li>
+    <li class="li-calendar">18</li>
+    <li class="li-calendar">19</li>
+    <li class="li-calendar">20</li>
+    <li class="li-calendar">21</li>
+    <li class="li-calendar">22</li>
+    <li class="li-calendar">23</li>
+    <li class="li-calendar">24</li>
+    <li class="li-calendar">25</li>
+    <li class="li-calendar">26</li>
+    <li class="li-calendar">27</li>
+    <li class="li-calendar">28</li>
+    <li class="li-calendar">29</li>
+    <li class="li-calendar">30</li>
+    <li class="li-calendar">30</li>
+    <li class="month-next">1</li>
+    <li class="month-next">2</li>
+   
+  </ul>
+    
+</div>
+
+        </div>
+<div class="mini-calendar-links">
+    <ul class="block-list-links-mini-calendar">
+        <div class="mobile-mini-calendar-links">
+    <li class="link-today-mini-calendar" style="list-style:none;"><a href="#">Today</a></li>
+            <li class="link-tomorrow-mini-calendar" style="list-style: none"><a href="#">Tomorrow</a></li>
+            <li class="link-this-week-mini-calendar" style="list-style: none"><a href="#">This Week</a></li>
+            <li class="link-next-week-mini-calendar" style="list-style: none"><a href="#">Next Week</a></li>
+        </div>
+    </ul>
+        </div>
+        
+        </div>
+
+    <div class="calendar-legend"><h2>Legend</h2>    
+        <div class="legend-text" >
+        <ul>
+              <li style="list-style:none;"><img src="https://i.ibb.co/6XqQ3nT/output-onlinepngtools-12.png" alt="No Impact" title="No Impact"  border="0" style="width=15px; height:15px; " /> No Imppact</li>
+              <li style="list-style:none;"><img src="https://i.ibb.co/rQrfsjk/output-onlinepngtools-15.png" alt="Low Impact" title="Low Impact" border="0" style="width=15px; height:15px;" /> Low Impact</li>
+              <li style="list-style:none;"><img src="https://i.ibb.co/BzwLxcL/output-onlinepngtools-13.png" alt="Medium Impact" title="Medium Impact" border="0" style="width=15px; height:15px;" /> Medium Impact</li>
+              <li style="list-style:none;"><img src="https://i.ibb.co/ChsfjfY/output-onlinepngtools-14.png" alt="High Impact" title="High Impact" border="0" style="width=15px; height:15px;" /> Strong Impact</li>
+              <br>
+              <li style="color:green; list-style:none;">Green Numbers</li>Better than forecast -or- revised better
+              <li style="color:red; list-style:none;">Red Numbers</li>Worse than forecast -or- revised worse
+         </ul>
+        </div>
+ 
+    </div>
+        </div>
+    
+    
+
+    
+    
+    
+    
+    
+   <!-- Main calendar --> 
+<div class="container-calendar">
+    
+    
+ <!-- Calendar filters-->   
+<div class="container-table-nav">
+    
+<!-- Filter date picker -->
+    <div class="table-nav-date-picker">
+<div class="no-image"><i class="fa fa-calendar" style="font-size: 20px; padding-top: 8px; padding-right: 4px;"></i> </div><script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+<script>$('input[name="dates"]').daterangepicker();</script>
+
+
+
+
+ 
+<input type="text" name="datetimes" />
+
+<script>
+$(function() {
+  $('input[name="datetimes"]').daterangepicker({
+    timePicker: true,
+    startDate: moment().startOf('hour'),
+    endDate: moment().startOf('hour').add(32, 'hour'),
+    locale: {
+      format: 'M/DD hh:mm A'
+    }
+  });
+});
+</script>
+ 
+</div>
+
+
+<div class="blank-space"></div>
+    
+ <!-- next button, takes to the next event -->   
+    <button class="btn"><i class="fa fa-toggle-right fa_custom fa-adjust" style="font-size: 22px"></i><p class="no-text">Next</p></button>
+    
+    
+    <!-- Filter what will be displayed in the calendar
+<button class="btn"><i class="fa fa-filter fa_custom fa-adjust" style="font-size: 22px"></i><p class="no-text">Filter</p></button>
+    
+    -->
+    
+    <label class="dropdown">
+
+  <div class="dd-button">
+    <i class="fa fa-filter fa_custom fa-adjust" style="font-size: 22px"></i><p class="no-text">Filter
+  </div>
+
+  <input type="checkbox" class="dd-input" id="test">
+
+  <ul class="dd-menu">
+ <div class="filter-container">
+     
+    <div class="expected-impact-filter">
+     
+        
+     <div class="filter_category">
+         <h3 class="h3-expected-impact">Expected Impact</h3>
+         <p class="p-select-all" style="font-size: 12px;">(all<input type="checkbox" onclick='selectAll()' value="Select All" />none<input type="checkbox" onclick='UnSelectAll()' value="Unselect All"/>)</p>
+	</div>
+         
+<input class="checkbox" type="checkbox" name="acs"> <img src="https://i.ibb.co/ChsfjfY/output-onlinepngtools-14.png" alt="High Impact" title="High Impact" border="0" style="width=15px; height:15px;" />
+<input class="checkbox" type="checkbox" name="acs"> <img src="https://i.ibb.co/BzwLxcL/output-onlinepngtools-13.png" alt="Medium Impact" title="Medium Impact" border="0" style="width=15px; height:15px;" />
+        
+<input class="checkbox" type="checkbox" name="acs"> <img src="https://i.ibb.co/rQrfsjk/output-onlinepngtools-15.png" alt="Low Impact" title="Low Impact" border="0" style="width=15px; height:15px;" />
+
+        <br>
+       <br>
+     
+     
+     
+     
+     </div>
+    <div class="event-type-filter">
+         <div class="container-event-type-filter">
+             
+             <div class="heading-event-type"><h3>Event Types</h3></div>
+   
+             <div class="event-type-left-side-1">
+<input type="checkbox" name="event" value="GDP"> GDP</div> 
+
+             <div class="event-type-left-side-2">
+    <input type="checkbox" name="event" value="Employment"> Employment</div>
+     
+             <div class="event-type-left-side-3">        
+         <input type="checkbox" name="event" value="Central Bank"> Central Bank</div>
+
+             
+             
+             
+    <div class="event-type-right-side-1">
+        <input type="checkbox" name="event" value="Speeches"> Speeches</div>
+         <div class="event-type-right-side-2">       
+             <input type="checkbox" name="event" value="Business Surveys"> Business Surveys</div>
+                <div class="event-type-right-side-3">
+             <input type="checkbox" name="event" value="Consumer Surveys"> Consumer Surveys
+             </div>
+     </div>
+        
+        
+        
+        
+        </div>
+    <div class="currency-filter">
+              <div class="container-currency-type-filter">       
+
+               <div class="heading-currency-filter"><h3>Currencies</h3></div>
+           
+<div class="currency-type-left-side-1"><input type="checkbox" name="currency" value="GDP"> AUD</div>       
+<div class="currency-type-left-side-2"><input type="checkbox" name="currency" value="CHF"> CHF</div>
+<div class="currency-type-left-side-3"><input type="checkbox" name="currency" value="CNY"> CNY</div>
+<div class="currency-type-left-side-4"><input type="checkbox" name="currency" value="EUR"> EUR</div>
+<div class="currency-type-left-side-5"><input type="checkbox" name="currency" value="GBP"> GBP</div>
+<div class="currency-type-right-side-1"><input type="checkbox" name="currency" value="JPY"> JPY</div>
+<div class="currency-type-right-side-2"><input type="checkbox" name="currency" value="NZD"> NZD </div>  
+<div class="currency-type-right-side-3"><input type="checkbox" name="currency" value="USD"> USD</div>
+<div class="currency-type-right-side-4"><input type="checkbox" name="currency" value="CAD"> CAD</div>
+   
+        </div>
+        
+       
+      </div>
+    <div class="confirm-filter">
+    <div class="container-confirm-filter">
+        
+<div class="submit-filter"><input type="submit" value="Filter" class="filter-submit"></div>
+<div class="submit-can cel"><input type="submit" value="Cancel" class="filter-cancel"></div>
+           </div>
+        
+        
+        </div>
+
+      
+     
+     
+  </ul>
+  
+
+    </label>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+   
+
+  <!-- column cetergories -->  
+<div class="container-table-head">
+
+
+       
+<div class="date-column">
+    <p class="no-text-nav-bar">Date</p>
+</div>
+<div class="next-event-column">
+<!-- arrow next event -->
+</div>
+<div class="time-column" class="no-text">
+    <p class="no-text-nav-bar">Time</p>
+</div>
+<div class="currency-column" class="no-text">
+    <p class="no-text-nav-bar">Currency</p>
+</div>
+<div class="impact-column" class="no-text">
+    <p class="no-text-nav-bar">Impact</p>
+</div>
+<div class="indicator-column" >
+<p class="no-text-nav-bar">Indicator</p>
+</div>
+<div class="actual-column">
+<p>Actual</p>
+</div>
+<div class="forecast-column">
+    <p>Forecast</p>
+</div>
+<div class="previous-column">
+    <p>Previous</p>
+</div>
+<div class="high-column">
+    <p>High</p>
+</div>
+<div class="low-column">
+    <p>Low</p>
+</div>
+<div class="details-column">
+    <p>Details</p>
+</div>   
+    
+    </div>
+            
+        <!-- table data -->  
+            
+<!-- Row 1 --> 
+ <div class="container-table-row-1">   
+
+
+<div class="date-column" >
+Mon <br class="no-br">Aug 12 
+</div>
+<div class="next-event-column" >
+
+</div>
+<div  class="time-column" >
+All Day
+</div>
+<div class="currency-column"  >
+JPY
+</div>
+<div class="impact-column" >
+<img src="https://i.ibb.co/6XqQ3nT/output-onlinepngtools-12.png" alt="No Impact" title="No Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div class="indicator-column" >
+Bank Holiday
+</div>
+<div class="actual-column">
+    -
+</div>
+<div class="forecast-column">
+-
+</div>
+<div class="previous-column" >  
+-
+</div>
+    
+<div  class="high-column"  >
+-
+</div>
+<div class="low-column" >
+-
+</div>
+
+<div  class="details-column"> 
+    <div onclick="myFunction()">
+        <i class="fa fa-file-pdf-o"  style="font-size: 20px; padding-top: 3px; padding-right: 3px; color: DodgerBlue;" ></i></div>
+</div>
+<div id="detailsRow">
+    <div class="details-data-block">
+        <div class="data-block1">
+            <div class="details-specs-heading"><h3>Specs</h3></div>
+            <div class="details-specs-data"><p>Level of a diffusion index based on surveyed purchasing managers in the manufacturing industry;</p></div>
+        </div>
+        <div class="data-block2">
+            <div class="details-history-heading"><h3>History</h3></div>
+            <div class="details-history-data"><p>Aug 22, 2019 51.3 51.6<br>
+Jul 24, 2019	51.4		52.0</p></div>
+        </div>
+        <div class="data-block3">
+            <div class="details-stories-heading"><h3>Related Stories</h3></div>
+            <div class="details-stories-data"><p>AU business activity returns to growth in September
+
+From markiteconomics.com
+|
+Sep 23, 2019
+Business activity in the Australian private sector returned to growth in September, according to the latest Commonwealth Bank Flash Composite PMI®. The rebound reflected an ... </p></div>
+        </div>
+        <div onclick="myFunction()">
+        <i class="fa fa-close"  style="font-size: 20px; padding-top: 3px; padding-right: 3px; color: DodgerBlue;" ></i></div>
+        
+      </div>
+     
+     
+     </div>
+    </div>
+    
+            <!-- Show details row-->
+        <script>
+function myFunction() {
+  var x = document.getElementById("detailsRow");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    
+    
+
+    
+<!-- Row 2 -->
+
+<div class="container-table-row-2">   
+
+
+
+<div class="date-column" >
+
+</div>
+<div class="next-event-column" >
+
+</div>
+<div class="time-column">
+5:00pm
+</div>
+<div class="currency-column" >
+CNY
+</div>
+<div  class="impact-column" > 
+<img src="https://i.ibb.co/BzwLxcL/output-onlinepngtools-13.png" alt="Medium Impact" title="Medium Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div  class="indicator-column" >
+New Loans
+</div>
+<div class="actual-column" >
+1060B
+</div>
+<div class="forecast-column">
+1275B
+</div>
+<div class="previous-column" >
+1660B
+</div>
+<div class="high-column" >
+1660B
+</div>
+<div class="low-column">
+1275B
+</div>
+
+<div class="details-column" >
+ <a href="https://terminal.forexsource.co/research.php" target="_blank">   
+     <i class="fa fa-file-pdf-o"  style="font-size: 20px; padding-top: 3px; padding-right: 3px; color: DodgerBlue;" ></i></a>
+</div>
+    </div>
+
+   <!-- Row 3 -->
+    <div class="container-table-row-3">   
+
+
+
+<div  class="date-column" >
+Tue <br class="no-br">Aug 13 
+</div>
+<div class="next-event-column" >
+
+</div>
+<div  class="time-column">
+5:00pm
+</div>
+<div class="currency-column" >
+CNY
+</div>
+<div  class="impact-column" > 
+<img src="https://i.ibb.co/BzwLxcL/output-onlinepngtools-13.png" alt="Medium Impact" title="Medium Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div class="indicator-column" >
+New Loans
+</div>
+<div class="actual-column" >
+1060B
+</div>
+<div class="forecast-column">
+1275B
+</div>
+<div class="previous-column" >
+1660B
+</div>
+<div class="high-column" >
+1660B
+</div>
+<div class="low-column" >
+1275B
+</div>
+
+<div class="details-column" >
+ <a href="https://terminal.forexsource.co/research.php" target="_blank">   
+     <i class="fa fa-file-pdf-o"  style="font-size: 20px; padding-top: 3px; padding-right: 3px; color: DodgerBlue;" ></i></a>
+</div>
+   
+    </div>
+    
+    <!-- Row 4 --> 
+ <div class="container-table-row-4">   
+
+
+<div class="date-column" >
+Wed <br class="no-br">Aug 14 
+</div>
+<div class="next-event-column" >
+
+</div>
+<div  class="time-column" >
+All Day
+</div>
+<div class="currency-column"  >
+JPY
+</div>
+<div class="impact-column" >
+<img src="https://i.ibb.co/6XqQ3nT/output-onlinepngtools-12.png" alt="No Impact" title="No Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div class="indicator-column" >
+Bank Holiday
+</div>
+<div class="actual-column">
+    -
+</div>
+<div class="forecast-column">
+-
+</div>
+<div class="previous-column" >  
+-
+</div>
+    
+<div  class="high-column"  >
+-
+</div>
+<div class="low-column" >
+-
+</div>
+
+<div  class="details-column" >
+<a href="https://terminal.forexsource.co/research.php" target="_blank">   
+     <i class="fa fa-file-pdf-o"  style="font-size: 20px; padding-top: 3px; padding-right: 3px; color: DodgerBlue;" ></i></a>
+</div>
+    </div> 
+    
+    
+    </div>
+   
+    
+    
+    
+    </div>
+
+    
+    <div class="container-footer">Forex Source</div>
+</body>
+    
+</html>

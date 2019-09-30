@@ -1,0 +1,279 @@
+<html>
+
+
+<head>
+<link rel="stylesheet" href="css-grid-test.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+    <body>
+    
+    <div class="container">
+        <div class="header"> Header</div>
+        <!-- mini calendar and key-->
+        <div class="left-column">
+            mini calendar
+        </div>
+        <!-- calendar data feed -->
+        <div class="right-column">
+            
+            
+            <!-- table filter bar-->    
+        <div class="table-filter-bar">
+                        
+ <!-- dropdown calendar, select dates you want to be displayed on the main calendar-->  
+            <div class="table-nav-date-picker">
+<img src="https://i.ibb.co/5MBbgHt/CALANDER-ICON.png" alt="output-onlinepngtools-7" align="middle" border="0" style="width=28x; height:23px;" /> <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+
+<script>$('input[name="dates"]').daterangepicker();</script>
+
+
+
+<button onclick="myFunction()" class="drp-dwn-calendar">
+ 
+<input type="text" name="datetimes" />
+
+<script>
+$(function() {
+  $('input[name="datetimes"]').daterangepicker({
+    timePicker: true,
+    startDate: moment().startOf('hour'),
+    endDate: moment().startOf('hour').add(32, 'hour'),
+    locale: {
+      format: 'M/DD hh:mm A'
+    }
+  });
+});
+</script>
+                        
+    </div>
+                <div></div>
+                 <!-- Next button takes you to the latest event on calendar-->  
+                <div class=next-button>Next</div>
+                
+                 <!-- -Filter button, filter what you want to display on calendar -->  
+                <div class=dropdown-filter-button>
+                      <button onclick="myFunction()" class="dropbtn"><img src="https://i.ibb.co/QmsXFF9/filter-fs.png" alt="output-onlinepngtools-7" align="middle" border="0" style="width=17x; height:17px;" /> Filter</button>
+                
+                </div>
+            </div>
+              
+           
+            
+            
+            <!-- table header columns -->    
+        <div class="table-header">
+       
+<div class="date-column">
+Date
+</div>
+<div class="next-event-column">
+<!-- arrow next event -->
+</div>
+<div class="time-column">
+Time
+</div>
+<div class="currency-column">
+Currency
+</div>
+<div class="impact-column">
+Impact
+</div>
+<div class="indicator-column">
+Indicator
+</div>
+<div class="actual">
+Actual
+</div>
+<div class="forecast-column">
+Forecast
+</div>
+<div class="previous-column">
+Previous
+</div>
+<div class="high-column">
+High
+</div>
+<div class="low-column">
+Low
+</div>
+<div class="details-column">
+Details
+</div>   
+            </div>
+            
+        <!-- table data -->  
+            
+<!-- Row 1 --> 
+    
+<div class="row-1">
+
+
+<div class="date-column" >
+Mon <br>Aug 12 
+</div>
+<div class="next-event-column" >
+
+</div>
+<div  class="time-column" >
+All Day
+</div>
+<div class="currency-column"  >
+JPY
+</div>
+<div class="impact-column" >
+<img src="https://i.ibb.co/6XqQ3nT/output-onlinepngtools-12.png" alt="No Impact" title="No Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div class="indicator-column" >
+Bank Holiday
+</div>
+<div class="actual-column">
+    -
+</div>
+<div class="forecast-column">
+-
+</div>
+<div class="previous-column" >  
+-
+</div>
+    
+<div  class="high-column"  >
+-
+</div>
+<div class="low-column" >
+-
+</div>
+
+<div  class="details-column" >
+<a href="https://terminal.forexsource.co/research.php" target="_blank">   
+     <img src="https://i.ibb.co/rmY3r1W/folder-file-yellow-document-info-icon-vector-graphic-MAB7-OE9-Jppw.png" alt="output-onlinepngtools-7" align="middle" border="0" style="width=20px; height:20px;" /></a>
+</div>
+</div>    
+
+    
+<!-- Row 2 -->
+<div class="row-2">
+
+
+<div class="date-column" >
+
+</div>
+<div class="next-event-column" >
+
+</div>
+<div class="time-column">
+5:00pm
+</div>
+<div class="currency-column" >
+CNY
+</div>
+<div  class="impact-column" > 
+<img src="https://i.ibb.co/BzwLxcL/output-onlinepngtools-13.png" alt="Medium Impact" title="Medium Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div  class="indicator-column" >
+New Loans
+</div>
+<div class="actual-column" >
+1060B
+</div>
+<div class="forecast-column">
+1275B
+</div>
+<div class="previous-column" >
+1660B
+</div>
+<div class="high-column" >
+1660B
+</div>
+<div class="low-column">
+1275B
+</div>
+
+<div class="details-column" >
+ <a href="https://terminal.forexsource.co/research.php" target="_blank">   
+     <img src="https://i.ibb.co/rmY3r1W/folder-file-yellow-document-info-icon-vector-graphic-MAB7-OE9-Jppw.png" alt="output-onlinepngtools-7" align="middle" border="0" style="width=20px; height:20px;" /></a>
+</div>
+</div>  
+
+   <!-- Row 3 -->
+<div class="row-3">
+
+
+<div  class="date-column" >
+Tue <br>Aug 13 
+</div>
+<div cclass="next-event-column" >
+
+</div>
+<div  class="time-column">
+5:00pm
+</div>
+<div class="currency-column" >
+CNY
+</div>
+<div  class="impact-column" > 
+<img src="https://i.ibb.co/BzwLxcL/output-onlinepngtools-13.png" alt="Medium Impact" title="Medium Impact" align="middle" border="0" style="width=15px; height:15px;" />
+</div>
+<div class="indicator-column" >
+New Loans
+</div>
+<div class="actual-column" >
+1060B
+</div>
+<div class="forecast-column">
+1275B
+</div>
+<div class="previous-column" >
+1660B
+</div>
+<div class="high-column" >
+1660B
+</div>
+<div class="low-column" >
+1275B
+</div>
+
+<div class="details-column" >
+ <a href="https://terminal.forexsource.co/research.php" target="_blank">   
+     <img src="https://i.ibb.co/rmY3r1W/folder-file-yellow-document-info-icon-vector-graphic-MAB7-OE9-Jppw.png" alt="output-onlinepngtools-7" align="middle" border="0" style="width=20px; height:20px;" /></a>
+</div>
+</div>           
+               
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="footer">
+       2019 -  Forex Source
+        </div>
+    
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
